@@ -1,0 +1,83 @@
+:root {
+    --logo-text-color:#000000;
+    --main-title-color: #ffffff;
+    --second-title-color: #212121;
+    --first-text-color: #212121;
+    --first-btn-color:#2196f3;
+    --second-btn-color: #000000;
+    --main-heder-text-color: #212121;
+    --second-header-text-color: #757575;
+    --header-nav-text-color: #2196f3;
+}
+body {
+    font-family: Roboto; sans-serif;
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+/*------------header----------------------------------------------------------*/
+.header-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--main-heder-text-color)
+}
+.header-link:hover,
+.header-link:focus{
+    color:var(--header-nav-text-color);
+}
+
+.header-tel{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--second-header-text-color)
+}
+.header-mail{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--second-header-text-color)
+}
+/*----------------------------hero-------------------------------------------*/
+.hero-section{
+    background-color : #2F303A;
+}
+.title-hero{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color:var(--main-title-color);
+}
+.button-hero{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color:var(--main-title-color);
+}
+/*------------------------------------title-text-----------------------------*/
+
+.title-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color:var(--first-text-color);
+}
+.about-title-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--second-header-text-color);
+}
