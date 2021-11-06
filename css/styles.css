@@ -30,7 +30,28 @@ body {
 .header-link:focus{
     color:var(--header-nav-text-color);
 }
-
+.color-link:hover,
+.color-link:focus{
+    color: var(--header-nav-text-color);
+}
+.header-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--header-nav-text-color);
+}
+.second-logo-color{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color:var(--logo-text-color);
+}
 .header-tel{
     font-weight: 500;
     font-size: 14px;
