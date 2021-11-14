@@ -111,20 +111,30 @@ body {
 .header-container{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /*----------------------------hero-------------------------------------------*/
-.hero-section{
+.hero {
+    text-align: center;
     background-color : #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    letter-spacing: 0.06em;
 }
+
 .title-hero{
     text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     color:var(--main-title-color);
+    width: 696px;
 }
 .button-hero{
     font-family: inherit;
@@ -132,11 +142,23 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color:var(--main-title-color);
+    color: var(--main-title-color);
+    background: #188CE8;
+    border-radius: 4px;
 }
-/*------------------------------------title-text-----------------------------*/
-
-.title-text{
+/*-----------------------post----------------------*/
+.post-text {
+    padding-top: 94px;
+}
+.post-info-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-info-text:not(:last-child){
+    margin-right: 30px;
+    width: 270px;
+}
+.title-text {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -144,20 +166,49 @@ body {
     letter-spacing: 0.03em;
     color:var(--first-text-color);
 }
-.about-title-text{
+.about-title-text {
+    padding-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--second-header-text-color);
+    width: 270px;
 }
 /*--------------------------What are we doing---------------------------------*/
+.gallery {
+    padding-top: 94px;
+}
 .gallery-list{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color:var(--first-text-color);
+    text-align: center ;
+    padding-bottom: 50px;
+}
+.gallery-item{
+    display: flex;
+    padding-bottom: 94px;
+}
+.gallery-img{
+    margin-right: 30px;
+}
+.team-list{
+    display: flex;
+    padding-bottom: 88px;
+    margin-left: -30px;
+}
+.our-team-item{
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin-left: 30px;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.our-team-page {
+    background-color: #F5F4FA;
+    padding-top: 94px;
 }
 .our-team{
     font-weight: 700;
@@ -165,13 +216,16 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color:var(--second-title-color);
+    text-align: center;
+    padding-bottom: 50px;
 }
 .pro-masters-item{
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--second-title-color)
+    color:var(--second-title-color);
 }
 .pro-masters-item-text{
     font-weight: 400;
@@ -180,9 +234,24 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-header-text-color);
 }
+.page-name-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 /*--------------------------------------footer---------------------------------------*/
+.footer-list{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer-section{
     background-color : #2F303A;
+}
+.link-footer-text{
+    padding-top: 20px;
+}
+.footer-space:not(:last-child){
+    margin-bottom: 9px;
 }
 .footer-logo{
     font-family: Raleway;
@@ -246,12 +315,3 @@ body {
     color: var(--second-header-text-color);
 }
 /*-------------------------------flexbox---------------------------------*/
-
-.nav-link-active::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent);
-    position: absolute;
