@@ -16,11 +16,17 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+/*img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}*/
+
 .container{
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 body {
     font-family: Roboto; sans-serif;
@@ -50,8 +56,13 @@ body {
     color: var(--header-nav-text-color);
 }
 .filter-btn:hover,
-.filter-btn:focus{
+.filter-btn:focus,
+.filter-btn:active{
+    background-color: var(--first-btn-color);
     color: var(--main-title-color);
+}
+.header{
+    height: 80px;
 }
 .header-logo{
     font-family: Raleway;
@@ -91,6 +102,10 @@ body {
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
+.header-item{
+    padding-top: 32px; 
+    padding-bottom: 32px;
+}
 .header-connect{
     margin-left: auto;
 }
@@ -110,6 +125,7 @@ body {
 }
 .header-container{
     display: flex;
+
     align-items: center;
     border-bottom: 1px solid #ECECEC;
 }
@@ -206,6 +222,7 @@ body {
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+/*----------------------------------team-------------------------------*/
 .our-team-page {
     background-color: #F5F4FA;
     padding-top: 94px;
@@ -288,7 +305,16 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 /*---------------------------------filter-----------------------------*/
-
+.filter-menu{
+    
+    padding-bottom: 34px;
+    display: flex;
+    justify-content: center;
+}
+.section-filter{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 .filter-btn{
     font-family: inherit;
     font-weight: 500;
@@ -297,21 +323,49 @@ body {
     letter-spacing: 0.03em;
     color:var(--first-text-color) ;
 }
+
 .pointer {
     cursor: pointer;
 }
-.filter-name{
+.img{
+display: block;
+max-width: 100%;
+height: auto;
+}
+.filter-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--main-heder-text-color);
 }
-.filter-aside{
+.filter-aside {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--second-header-text-color);
 }
+.filter-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+
+}
+.filter-set > .filter-window{
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    /*flex-basis: calc(100% / 3 - 30px);*/
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+.filter-window:nth-child(3n){
+    margin-right: 0;
+}
+.card-content{
+    padding: 20px 24px 20px 24px;
+}
+
 /*-------------------------------flexbox---------------------------------*/
