@@ -17,12 +17,6 @@ ul {
     padding: 0;
 }
 
-/*img {
-    display: block;
-    min-width: 100%;
-    height: auto;
-}*/
-
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -46,6 +40,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-heder-text-color)
+
 }
 .header-link:hover,
 .header-link:focus{
@@ -98,11 +93,13 @@ body {
 }
 .header-logo{
     margin-right: 93px;
+    padding-top: 24px; 
+    padding-bottom: 25px;
 }
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
-.header-item{
+.link-item{
     padding-top: 32px; 
     padding-bottom: 32px;
 }
@@ -118,7 +115,6 @@ body {
 .list-item .header-part + .header-part {
     margin-left: 50px;
 }
-
 .header-navigation{
     display: flex;
     align-items: center;
@@ -161,6 +157,7 @@ body {
     color: var(--main-title-color);
     background: #188CE8;
     border-radius: 4px;
+    padding: 10px 32px 10px 32px;
 }
 /*-----------------------post----------------------*/
 .post-text {
@@ -202,7 +199,7 @@ body {
     letter-spacing: 0.03em;
     color:var(--first-text-color);
     text-align: center ;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .gallery-item{
     display: flex;
@@ -234,7 +231,7 @@ body {
     letter-spacing: 0.03em;
     color:var(--second-title-color);
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .pro-masters-item{
     margin-bottom: 10px;
@@ -332,6 +329,7 @@ display: block;
 max-width: 100%;
 height: auto;
 }
+
 .filter-name {
     font-weight: 700;
     font-size: 18px;
@@ -355,7 +353,6 @@ height: auto;
 }
 .filter-set > .filter-window{
     flex-basis: calc((100% - 3 * 30px) / 3);
-    /*flex-basis: calc(100% / 3 - 30px);*/
     box-sizing: border-box;
     margin-right: 30px;
     margin-bottom: 30px;
