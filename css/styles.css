@@ -16,7 +16,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -32,7 +31,6 @@ body {
 .link{
     text-decoration: none;
 }
-
 /*------------header----------------------------------------------------------*/
 .header-link{
     font-weight: 500;
@@ -121,9 +119,11 @@ body {
 }
 .header-container{
     display: flex;
-
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+}
+.line-bottom{
+    background-color: var(--main-title-color);
+    border-bottom: 1px solid #ECECEC
 }
 
 /*----------------------------hero-------------------------------------------*/
@@ -191,6 +191,7 @@ body {
 /*--------------------------What are we doing---------------------------------*/
 .gallery {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .gallery-list{
     font-weight: 700;
@@ -203,14 +204,13 @@ body {
 }
 .gallery-item{
     display: flex;
-    padding-bottom: 94px;
+    
 }
 .gallery-img{
     margin-right: 30px;
 }
 .team-list{
     display: flex;
-    padding-bottom: 88px;
     margin-left: -30px;
 }
 .our-team-item{
@@ -223,6 +223,7 @@ body {
 .our-team-page {
     background-color: #F5F4FA;
     padding-top: 94px;
+    padding-bottom: 88px;
 }
 .our-team{
     font-weight: 700;
@@ -262,7 +263,8 @@ body {
     background-color : #2F303A;
 }
 .link-footer-text{
-    padding-top: 20px;
+    /*padding-top: 20px;*/
+    margin-top: 20px;
 }
 .footer-space:not(:last-child){
     margin-bottom: 9px;
@@ -303,10 +305,13 @@ body {
 }
 /*---------------------------------filter-----------------------------*/
 .filter-menu{
-    
-    padding-bottom: 34px;
+    margin-right: 8px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+}
+.btn-item:not(:last-child) {
+    margin-right: 8px;
 }
 .section-filter{
     padding-bottom: 94px;
@@ -319,8 +324,18 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color:var(--first-text-color) ;
+    padding: 6px 22px 6px 22px;
 }
-
+.button{
+    background-color: #F5F4FA
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border-style: none;
+    border-radius: 4px;
+}
 .pointer {
     cursor: pointer;
 }
@@ -329,7 +344,6 @@ display: block;
 max-width: 100%;
 height: auto;
 }
-
 .filter-name {
     font-weight: 700;
     font-size: 18px;
@@ -349,7 +363,6 @@ height: auto;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-
 }
 .filter-set > .filter-window{
     flex-basis: calc((100% - 3 * 30px) / 3);
@@ -363,6 +376,7 @@ height: auto;
 }
 .card-content{
     padding: 20px 24px 20px 24px;
+    /*border: 1px solid #EEEEEE;*/
 }
 
 /*-------------------------------flexbox---------------------------------*/
