@@ -125,13 +125,16 @@ body {
     background-color: var(--main-title-color);
     border-bottom: 1px solid #ECECEC
 }
-.mail-icon:hover::before{
+/*.mail-icon:hover::before{
     content: "";
-    display: block;
-    background-image: url("../images/icons.svg/email.svg");
+    background-image: url("../images/omgsvg/email.svg");
+    background-repeat: no-repeat;
 }
 .tel-icon::before{
-
+    content: "";
+    background-image: url("../images/omgsvg/smartphone.svg");
+    display: block;
+    background-repeat: no-repeat;
 }
 
 /*----------------------------hero-------------------------------------------*/
@@ -267,12 +270,44 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--second-header-text-color);
+    margin-bottom: 16px;
 }
 .page-name-container{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
+.master-social-item{
+    width: 44px;
+    height: 44px;
+}
+.master-social-link{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F4FA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #03a9f4;
+    cursor: pointer;
+}
+.master-social{
+    display: flex;
+    justify-content: center;
+}
+.master-social-item:not(:last-child){
+    margin-right: 10px;
+}
+.master-social-icon{
+    fill: #2a2a2a;
+}
+
+.master-social-icon:hover {
+    fill: #03a9f4;
+    cursor: pointer;
+}
+
 /*--------------------------------------footer---------------------------------------*/
 .footer-list{
     padding-top: 60px;
