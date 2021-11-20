@@ -289,8 +289,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #03a9f4;
-    cursor: pointer;
 }
 .master-social{
     display: flex;
@@ -300,15 +298,10 @@ body {
     margin-right: 10px;
 }
 .master-social-icon{
-    fill: #2a2a2a;
+    
 }
-
-.master-social-icon:hover {
-    fill: #03a9f4;
-    cursor: pointer;
-}
-
 /*--------------------------------------footer---------------------------------------*/
+
 .footer-list{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -433,4 +426,40 @@ height: auto;
     /*border: 1px solid #EEEEEE;*/
 }
 
-/*-------------------------------flexbox---------------------------------*/
+/*-------------------------------our-clients--------------------------------*/
+
+.our-clients-page {
+    background-color:
+    padding-top: 94px;
+    padding-bottom: 88px;
+}
+.our-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color:var(--second-title-color);
+    text-align: center;
+    margin-bottom: 50px;
+}/*
+.pro-masters-item{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--second-title-color);
+}
+.pro-masters-item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--second-header-text-color);
+    margin-bottom: 16px;
+}
+.page-name-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}*/
