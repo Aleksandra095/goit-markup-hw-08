@@ -293,7 +293,7 @@ body {
 .master-social-link{
     width: 100%;
     height: 100%;
-    background-color: ;
+    background-color:var(--second-header-text-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -303,11 +303,17 @@ body {
     display: flex;
     justify-content: center;
 }
-.master-social-item:not(:last-child){
+/*.master-social-item:not(:last-child){
     margin-right: 10px;
-}
-/*.master-social-icon{
 }*/
+.master-social-item + .master-social-item{
+    margin-left: 10px;
+}
+.master-social-icon{
+    fill: #ffffff;
+
+
+}
 /*--------------------------------------footer---------------------------------------*/
 
 .footer-list{
