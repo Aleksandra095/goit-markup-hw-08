@@ -192,6 +192,7 @@ body {
     color: var(--main-title-color);
     background: #188CE8;
     border-radius: 4px;
+    border: 1px solid rgb(0 0 0 / 15%);
     padding: 10px 32px 10px 32px;
 }
 /*-----------------------post----------------------*/
@@ -339,6 +340,7 @@ body {
 .master-social-link:hover,
 .master-social-link:focus{
     background-color: var(--social-icon-btn-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .master-social-link:hover .master-social-icon,
 .master-social-link:focus .master-social-icon{
@@ -474,6 +476,9 @@ body {
     padding: 6px 22px;
     border-style: none;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
 }
 .pointer {
     cursor: pointer;
@@ -509,19 +514,23 @@ height: auto;
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .filter-window:nth-child(3n){
     margin-right: 0;
 }
 .card-content{
     padding: 20px 24px 20px 24px;
-    /*border: 1px solid #EEEEEE;*/
+}
+.portfolio-link{
+    display: block;
+    text-decoration: none;
 }
 .portfolio-link:hover,
 .portfolio-link:focus{
-    Radius: 1px;
-    Offset: 0px, 1px;
-    box-shadow: rgba(0, 0, 0, 0.12);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /*-------------------------------our-clients--------------------------------*/

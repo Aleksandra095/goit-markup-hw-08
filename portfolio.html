@@ -25,12 +25,24 @@
             </nav>
         <!------------------ contacts section ---------------------------->
             <div class="header-connect">
-                <ul class="list list-item">
+                <ul class="list list-item" >
                     <li class="header-part">
-                        <a class="link link-item header-mail color-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="link mail-icon link-item header-mail color-link" href="mailto:info@devstudio.com">
+                            <svg class="menu-contacts-icon envelope-icon-size" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope">
+                                </use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="header-part">
-                        <a class="link link-item header-tel color-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="header-part  ">
+                        <a class="link tel-icon link-item header-tel color-link" href="tel:+380961111111">
+                        <svg class="menu-contacts-icon tel-icon-size" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone">
+                            </use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -65,6 +77,7 @@
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img9.jpg" 
                         alt="Постер баскетбол"
@@ -75,9 +88,11 @@
                             <h2 class="filter-name">Постер New Orlean vs Golden Star</h2>
                             <p class="filter-aside">Дизайн</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img10.jpg" 
                         alt="ресторан Seafood"
@@ -88,9 +103,11 @@
                             <h2 class="filter-name">Ресторан Seafood</h2>
                             <p class="filter-aside">Приложение</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img11.jpg" 
                         alt="Гарнитура проект Prime"
@@ -101,9 +118,11 @@
                             <h2 class="filter-name">Проект Prime</h2>
                             <p class="filter-aside">Маркетинг</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img12.jpg" 
                         alt="проект Boxes"
@@ -114,9 +133,11 @@
                             <h2 class="filter-name">Проект Boxes</h2>
                             <p class="filter-aside">Приложение</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img13.jpg" 
                         alt="Inspiration has no Borders"
@@ -127,9 +148,11 @@
                             <h2 class="filter-name">Inspiration has no Borders</h2>
                             <p class="filter-aside">Веб-сайт</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img14.jpg" 
                         alt="Издание Limited Edition"
@@ -140,9 +163,11 @@
                             <h2 class="filter-name">Издание Limited Edition</h2>
                             <p class="filter-aside">Дизайн</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img15.jpg" 
                         alt="Проект LAB"
@@ -153,9 +178,11 @@
                             <h2 class="filter-name">Проект LAB</h2>
                             <p class="filter-aside">Маркетинг</p>
                         </div>
+                        </a>
                     </li>
 
                     <li class="filter-window">
+                        <a class="portfolio-link" href="">
                         <img 
                         src="./images/img16.jpg" 
                         alt="Growing Business"
@@ -166,6 +193,7 @@
                             <h2 class="filter-name">Growing Business</h2>
                             <p class="filter-aside">Приложение</p>
                         </div>
+                        </a>
                     </li>
                 </ul>
             </div> 
@@ -173,17 +201,53 @@
     </main>
     <!----------------------------------footer section----------------------------->
     <footer class="footer-section footer-list">
-        <div class="container">
-        <a class="link footer-logo" lang="en" href=""> <span class="logo-color">Web</span>Studio</a>
-        <address class="footer-address link-footer-text footer-space">г. Киев, пр-т Леси Украинки, 26 </address>   
-            <ul class="list">
-                <li class="footer-space">
-                    <a class="link footer-mail color-link" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="footer-space">
-                    <a class="link footer-tel color-link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
+        <div class="container footer-main-conteiner">
+            <div class="addres-content">
+                <a class="link footer-logo" lang="en" href=""> <span class="logo-color">Web</span>Studio </a>
+                <address class="footer-address link-footer-text footer-space">г. Киев, пр-т Леси Украинки, 26 </address>   
+                <ul class="list">
+                    <li class="footer-space">
+                        <a class="link footer-mail color-link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-space">
+                        <a class="link footer-tel color-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-social-content">
+                <p class="footer-post-text"> ПРИСОЕДИНЯЙТЕСЬ</p>
+                <ul class="list social-footer">
+                    
+                    <li class="social-footer-item">
+                        <a class="social-footer-link">
+                        <svg class="footer-link" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg></a>
+                    </li>
+
+                    <li class="social-footer-item">
+                        <a class="social-footer-link">
+                        <svg class="footer-link" width="20" height="20">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg></a>
+                    </li>
+
+                    <li class="social-footer-item">
+                        <a class="social-footer-link">
+                        <svg class="footer-link" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg></a>
+                    </li>
+
+                    <li class="social-footer-item">
+                        <a class="social-footer-link">
+                        <svg class="footer-link" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
