@@ -25,7 +25,7 @@ ul {
     padding: 0 15px;
 }
 body {
-    font-family: Roboto; sans-serif;
+    font-family: Roboto;
     color: var(--first-text-color);
 }
 .list{
@@ -445,7 +445,7 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel{
-    font-weight: 400l;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -468,7 +468,6 @@ img {
 }
 .footer-main-conteiner{
     display: flex;
-    justify-content: baseline;
 }
 .social-footer-item{
     width: 44px;
@@ -528,7 +527,7 @@ img {
 
 }
 .button{
-    background-color: #F5F4FA
+    background-color: #F5F4FA;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -682,6 +681,7 @@ height: auto;
     color: var(--social-icon-btn-color);
 }
 
+/*--Modal--*/
 
 .backdrop{
     width: 100vw;
