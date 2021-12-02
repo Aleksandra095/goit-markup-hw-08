@@ -129,7 +129,6 @@ body {
 .tel-icon{
     display: flex;
     align-items: center;
-    transition: color var(--transition-duration-time) var(--timing-function);
 }
 .header-logo{
     margin-right: 93px;
@@ -683,16 +682,16 @@ height: auto;
     color: var(--social-icon-btn-color);
 }
 
+
 .backdrop{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2) ;
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    /*
-    transition: opacity 800ms, visibility 800ms;*/
-
+    transition: opacity 750ms, visibility 750ms;
 }
+
 .modal{
     min-width: 528px;
     min-height: 581px;
@@ -702,10 +701,12 @@ height: auto;
     0px 2px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
-    left: 50%;/*
-    transition: transform 800ms;*/
+    left: 50%;
+    transform: scale(1) rotate(0);
     transform: translate(-50%, -50%) scale(1);
+    transition: transform 750ms;
 }
+
 .modal-close{
     width: 30px;
     height: 30px;
@@ -720,14 +721,13 @@ height: auto;
     justify-content: center;
     box-sizing: border-box;
     border-radius: 50%;
-    
 }
 .is-hidden{
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
-/*
-.backdrop.is-hidden .modal {
-    transform: scale(1.5);
-    transition: transform 800ms;
+.backdrop.is-hidden .modal{
+    transform: scale(2) rotate(240deg);
+    transition: transform 750ms;
+}
