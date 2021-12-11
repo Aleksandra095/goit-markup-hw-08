@@ -781,3 +781,21 @@ height: auto;
     padding-right: 16px;
     outline: none;
 }
+.check-text{
+    font-size: 14px;
+    color:#757575;
+    display: flex;
+}
+.check-item{
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 5px;
+    border: 2px solid #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-icon{
+    fill: #ffffff;
+}
