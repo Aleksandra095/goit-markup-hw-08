@@ -1,0 +1,36 @@
+:root {
+    --logo-text-color:#000000;
+    --main-title-color: #ffffff;
+    --second-title-color: #212121;
+    --first-text-color: #212121;
+    --first-btn-color:#2196f3;
+    --second-btn-color: #000000;
+    --main-heder-text-color: #212121;
+    --second-header-text-color: #757575;
+    --header-nav-text-color: #2196f3;
+    --social-icon-btn-color: #2196f3;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration-time: 250ms;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: Roboto;
+    color: var(--first-text-color);
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
