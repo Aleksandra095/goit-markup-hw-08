@@ -13,19 +13,26 @@
     --social-icon-btn-color: #2196f3;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-duration-time: 250ms;
-}
+}*/
+
+/*
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 ul {
     margin: 0;
     padding: 0;
-}
+}*/
+
+/*
 .container{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+*/
+
+
 body {
     font-family: Roboto;
     color: var(--first-text-color);
@@ -302,11 +309,17 @@ body {
 .gallery-img{
     margin-right: 30px;
 }
+
+
+
+/*
 img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+}*/
+
+
 .gallery-container-item{
     position: relative;
 }
