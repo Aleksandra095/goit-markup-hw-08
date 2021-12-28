@@ -1,15 +1,21 @@
 @import './base/reset';
 @import './base/common';
+
 @import './utils/vars';
 @import './utils/hidden';
+
 @import './components/container';
 @import './components/modal';
+@import './components/btn';
+@import './components/social';
+@import './components/gallery';
+@import './components/portfolio';
+@import './components/cards';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/post';
-@import './layout/gallery';
 @import './layout/team';
-@import './layout/social';
 @import './layout/clients';
 @import './layout/filter';
 @import './layout/footer';

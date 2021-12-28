@@ -84,15 +84,16 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color var(--transition-duration-time) var(--timing-function);
+    &:hover,
+    &:focus{
+        background-color: var(--social-icon-btn-color);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
 }
+
 .footer-link{
     fill: #ffffff;
     transition: background-color var(--transition-duration-time) var(--timing-function);
-}
-.social-footer-link:hover,
-.social-footer-link:focus{
-    background-color: var(--social-icon-btn-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .footer-line{
     display: flex;
@@ -116,10 +117,11 @@
     padding-bottom: 15px;
     margin-right: 12px;
     margin-left: 93px;
+    &:focus{
+        border-color: var(--first-btn-color);
+    }
 }
-.email-line:focus{
-    border-color: var(--first-btn-color);
-}
+
 .sign-text{
     font-family: Roboto;
     font-weight: 700;

@@ -6,6 +6,10 @@
     color:var(--main-heder-text-color);
     position: relative;
     transition: color var(--transition-duration-time) var(--timing-function);
+    &:hover,
+    &:focus{
+        color:var(--header-nav-text-color);
+    }
 }
 .header-link.current::after{
     content: '';
@@ -18,19 +22,9 @@
     left: 0;
     border-radius: 2px;
 }
-.header-link:hover,
-.header-link:focus{
-    color:var(--header-nav-text-color);
-}
 .color-link:hover,
 .color-link:focus{
     color: var(--header-nav-text-color);
-}
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-btn:active{
-    background-color: var(--first-btn-color);
-    color: var(--main-title-color);
 }
 .header{
     height: 80px;
@@ -73,9 +67,9 @@
     margin-right: 10px;
     fill: currentColor;
     transition: background-color var(--transition-duration-time) var(--timing-function);
-}
-.menu-contacts-icon:hover{
-    color: var(--header-nav-text-color);
+    &:hover{
+        color: var(--header-nav-text-color);
+    }
 }
 .tel-icon-size{
     width: 10px;
