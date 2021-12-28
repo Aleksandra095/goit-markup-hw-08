@@ -6,6 +6,12 @@
     top: 0;
     transition: opacity 750ms, visibility 750ms;
 }
+.backdrop.is-hidden {
+    .modal{
+        transform: scale(2) rotate(240deg);
+        transition: transform 750ms;
+    }
+}
 .modal{
     width: 528px;
     height: 581px;
@@ -41,12 +47,6 @@
     opacity: 0;
     pointer-events: none;
 }
-.backdrop.is-hidden {
-    .modal{
-        transform: scale(2) rotate(240deg);
-        transition: transform 750ms;
-    }
-}
 .modal-title{
     font-size: 20px;
     font-weight: bold;
@@ -67,40 +67,12 @@
     display: block;
     outline: none;
     transition: border-color var(--transition-duration-time) var(--timing-function);
-    &:focus  + .input-icon{
-        fill: var(--social-icon-btn-color);
+    &:focus{
         border-color: var(--social-icon-btn-color);
     }
 }
-
-.modal-form-text::placeholder {
-    font-size: 12px;
-    color: rgba(117, 117, 117, 0.5);
-        &:focus{
-        border-color: var(--social-icon-btn-color);
-    }
-}
-
-.checkbox-policy{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.modal-field{
-    position: relative;
-    
-}
-.text-form-input{
-    display: block;
-    font-size: 12px;
-    line-height: 1.16;
-    color: #757575;
-}
-.input-icon{
-    position: absolute;
-    left: 11px;
-    top: 12px;
-    transition: fill var(--transition-duration-time) var(--timing-function);
+.modal-form-input:focus + .input-icon{
+    fill: var(--social-icon-btn-color);
 }
 .modal-form-text{
     width: 100%;
@@ -116,7 +88,40 @@
     margin-top: 4px;
     outline: none;
     transition: border-color var(--transition-duration-time) var(--timing-function);
+    &:focus{
+        border-color: var(--social-icon-btn-color);
+        &::placeholder{
+            font-size: 12px;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
 }
+
+.checkbox-policy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-field{
+    position: relative;
+}
+.text-form-input{
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    color: #757575;
+}
+.input-icon{
+    position: absolute;
+    left: 11px;
+    top: 12px;
+    transition: fill var(--transition-duration-time) var(--timing-function);
+    &:focus{
+        fill: var(--social-icon-btn-color);
+        border-color: var(--social-icon-btn-color);
+    }
+}
+
 .link-color-text{
     color: var(--header-nav-text-color);
 }

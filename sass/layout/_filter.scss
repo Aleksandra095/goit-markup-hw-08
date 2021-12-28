@@ -42,18 +42,19 @@
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-}
-.filter-set > .filter-window{
-    flex-basis: calc((100% - 3 * 30px) / 3);
-    box-sizing: border-box;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
-    transition: color var(--timing-function) var(--transition-duration-time);
+    & > .filter-window{
+        flex-basis: calc((100% - 3 * 30px) / 3);
+        box-sizing: border-box;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border: 1px solid #EEEEEE;
+        transition: color var(--timing-function) var(--transition-duration-time);
+    }
 }
 .filter-window :hover .card-content-text{
     transform: translateY(0);
+    &:nth-child(3n){
+        margin-right: 0;
+    }
 }
-.filter-window:nth-child(3n){
-    margin-right: 0;
-}
+
