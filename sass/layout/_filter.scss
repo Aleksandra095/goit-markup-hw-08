@@ -1,14 +1,14 @@
+.section-filter{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 .filter-menu{
     margin-right: 8px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
-.section-filter{
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-.filter-btn{
+.filter-menu__item{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -23,6 +23,13 @@
         color: var(--main-title-color);
     }
 }
+.filter-menu__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+
+
 .filter-name{
     font-weight: 700;
     font-size: 18px;

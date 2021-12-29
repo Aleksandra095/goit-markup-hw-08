@@ -1,8 +1,8 @@
-.our-clients-page{
+.clients-page{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.our-clients{
+.clients-page__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -11,11 +11,11 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.our-clients-list{
+.clients-page__list{
     display: flex;
     justify-content: center;
 }
-.our-clients-link{
+.clients-page__link{
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;
@@ -34,15 +34,15 @@
         color: var(--social-icon-btn-color);
     }
 }
-.our-clients-link:hover .our-clients-icon,
-.our-clients-link:focus .our-clients-icon{
+.clients-page__link:hover .clients-page__icon,
+.clients-page__link:focus .clients-page__icon{
     fill:var(--social-icon-btn-color);
 }
-.our-clients-icon{
+.clients-page__icon{
     fill: #AFB1B8;
     transition: fill var(--transition-duration-time) var(--timing-function);
 }
-.our-clients-item + .our-clients-item{
+.clients-page__item + .clients-page__item{
     margin-left: 30px;
 }
 
