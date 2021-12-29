@@ -34,13 +34,13 @@
         color: var(--social-icon-btn-color);
     }
 }
-.our-clients-icon{
-    fill: #AFB1B8;
-    transition: fill var(--transition-duration-time) var(--timing-function);
-}
 .our-clients-link:hover .our-clients-icon,
 .our-clients-link:focus .our-clients-icon{
     fill:var(--social-icon-btn-color);
+}
+.our-clients-icon{
+    fill: #AFB1B8;
+    transition: fill var(--transition-duration-time) var(--timing-function);
 }
 .our-clients-item + .our-clients-item{
     margin-left: 30px;

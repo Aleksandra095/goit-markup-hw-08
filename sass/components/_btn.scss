@@ -20,3 +20,17 @@
 .btn-item:not(:last-child) {
     margin-right: 8px;
 }
+.hero__button{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-title-color);
+    background: #188CE8;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 10px 32px 10px 32px;
+    cursor: pointer;
+    align-items: center;
+}

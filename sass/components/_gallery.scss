@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.gallery-list{
+.gallery__list{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -11,17 +11,16 @@
     text-align: center ;
     margin-bottom: 50px;
 }
-.gallery-item{
+.gallery__item{
     display: flex ;
 }
-.gallery-img{
+.gallery__card{
     margin-right: 30px;
 }
-
-.gallery-container-item{
+.gallery__img{
     position: relative;
 }
-.gallery-text-container{
+.gallery__text-container{
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -29,7 +28,7 @@
     background-color: rgba(47, 48, 58, 0.8);
     overflow: hidden;
 }
-.gallery-text{
+.gallery__text{
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;

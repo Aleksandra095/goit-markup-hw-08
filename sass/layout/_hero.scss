@@ -4,7 +4,7 @@
     padding-bottom: 200px;
     letter-spacing: 0.06em;
 }
-.hero-img-card{
+.hero__img{
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("../images/Img.hero.jpg");
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
     margin-right: auto;
     background-color : #2F303A;
 }
-.title-hero{
+.hero__text{
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-top: 0;
@@ -27,18 +27,4 @@
     letter-spacing: 0.06em;
     color:var(--main-title-color);
     width: 696px;
-}
-.button-hero{
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--main-title-color);
-    background: #188CE8;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 10px 32px 10px 32px;
-    cursor: pointer;
-    align-items: center;
 }
