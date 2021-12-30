@@ -34,10 +34,6 @@
         color: var(--social-icon-btn-color);
     }
 }
-.clients-page__link:hover .clients-page__icon,
-.clients-page__link:focus .clients-page__icon{
-    fill:var(--social-icon-btn-color);
-}
 .clients-page__icon{
     fill: #AFB1B8;
     transition: fill var(--transition-duration-time) var(--timing-function);
@@ -45,4 +41,8 @@
 .clients-page__item + .clients-page__item{
     margin-left: 30px;
 }
-
+.clients-page__link {
+    &:hover .clients-page__icon, &:focus .clients-page__icon {
+        fill: var(--social-icon-btn-color);
+    }
+}
