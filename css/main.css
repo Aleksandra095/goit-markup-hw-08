@@ -842,6 +842,10 @@ body {
   }
 }
 
+.team__list .img {
+  width: 100%;
+}
+
 .team__item {
   background-color: #fff;
   border-radius: 4px;
@@ -861,6 +865,10 @@ body {
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin-left: 30px;
   }
+}
+
+.team__item .img {
+  width: 100%;
 }
 
 .team__container {
@@ -1215,7 +1223,6 @@ body {
     display: block;
     text-align: center;
     justify-content: center;
-    width: 100%;
   }
 }
 
@@ -1247,6 +1254,12 @@ body {
 
 .subscribe-window__email-line:focus {
   border-color: var(--first-btn-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .subscribe-window__email-line {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

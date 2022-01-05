@@ -162,7 +162,7 @@
     display: block;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    
 
     }
     @media screen and (min-width: 1200px){
@@ -187,12 +187,11 @@
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
-    
-    &:focus{
+        &:focus{
         border-color: var(--first-btn-color);
     } 
-    @media screen and (min-width: 768px){
-   
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        min-width: 450px;
     }
     @media screen and (min-width: 1200px){
     margin-left: 93px; 

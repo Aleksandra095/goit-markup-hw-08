@@ -40,6 +40,9 @@
         display: flex;
         margin-left: -30px;
     }
+    .img{
+        width: 100%;
+    }
 }
 .team__item{
     background-color: #fff;
@@ -53,6 +56,9 @@
     @media screen and (min-width: 1200px){
         flex-basis: calc((100% - 4 * 30px) / 4);
         margin-left: 30px;
+    }
+    .img{
+        width: 100%;
     }
 }
 
