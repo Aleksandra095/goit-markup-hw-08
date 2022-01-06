@@ -101,7 +101,6 @@
         }
     }
 }
-
 .checkbox-policy{
     display: flex;
     align-items: center;
@@ -126,7 +125,6 @@
         border-color: var(--social-icon-btn-color);
     }
 }
-
 .link-color-text{
     color: var(--header-nav-text-color);
 }
@@ -138,13 +136,13 @@
     display: flex;
     align-items: center;
     @media screen and (max-width: 1199px){
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-    display: flex;
-    align-items: center;
-}
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center;
+    }
 }
 .text-doc{
     margin-left: 7px;
