@@ -3,13 +3,19 @@
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    & > .portfolio-window{
-        flex-basis: calc((100% - 3 * 30px) / 3);
+        & > .portfolio-window{
+            @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 3 * 30px) / 3);}
         box-sizing: border-box;
         margin-right: 30px;
         margin-bottom: 30px;
         border: 1px solid #EEEEEE;
         transition: color var(--timing-function) var(--transition-duration-time);
+    }
+}
+.portfolio-window{
+    @media screen and (min-width: 768px){
+        flex-basis: calc(100% / 2 - 30px);
     }
 }
 .portfolio-window__link{

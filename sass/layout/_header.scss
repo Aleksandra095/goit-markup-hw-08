@@ -110,16 +110,38 @@
     margin-left: auto;
 }
 .header-list{
-    display: flex;
+    display: none;
 }
 .header-navigation{
     display: flex;
     align-items: center;
 }
 .header-container{
-    width: 1200px;
+    /*width: 1200px;*/
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
     align-items: center;
+    @media screen and (min-width: 480px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.button-menu{
+    display: none;
+    @media screen and (max-width: 768px){
+    border: none;
+    background-color: #ffffff;
+    display: inline-block;
+    align-items: center;
+    margin-left: auto;
+    }
+}
+.button-menu__icon{
+    @media screen and (max-width: 768px){
+    width: 24px;
+    height: 16px;
+    border: none;
+    }
 }
