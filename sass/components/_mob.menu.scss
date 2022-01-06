@@ -7,6 +7,12 @@
     z-index: 999;
     padding-top: 48px;
     padding-bottom: 48px;
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .mob-close-btn{
@@ -20,12 +26,10 @@
     right: 15px;
     top: 0;
 }
-.mob-close-icon{
 
+.mobail-list{
+    justify-content: space-between;
 }
-
-
-.mobail-list
 .mobail-list__item{
     padding-left: 25px;
     &:not(:last-child){
@@ -41,43 +45,29 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: #212121;
-
 }
+mob-menu-top
+mob-menu-bottom
 
 
 
-
-.mobail-list__contacts
-.mobail-list__part
-.mobail-list__mail{
+.mobail-list__email {  
     display: block;
     padding-left: 25px;
     padding-top: 32px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    color: #757575;
+    
 }
 .mobail-list__tel{
     font-weight: 500;
     display: block;
     padding-left: 25px;
+    padding-top: 32px;
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color:#2196F3;
 }
-
-
-
-
-.mobail-social-list
-.mobail-social-list__item{
-    @media screen and (max-width: 479px){
-        margin-bottom: 20px;
-    }
-.mobail-social-list__link{
+.mobail-social-list__link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -85,4 +75,20 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color:#2196F3;
+    margin-right: 20px;
+}
+
+
+
+.mobail-social-list{
+    padding-left: 25px;
+    padding-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mobail-social-list__item {
+
+    @media screen and (max-width: 479px){
+        margin-bottom: 20px;
+    }
 }

@@ -58,13 +58,14 @@
             </button>
         </div>
 <!-------------------------------------------------->
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
             <div class="container">
-                <button type="button" class="mob-close-btn">
+                <div class="mob-menu-top">
+                    <button type="button" class="mob-close-btn">
                     <svg class="mob-close-icon" width="11" height="11">
                         <use href="./images/icons.svg#icon-Vector-1"></use>
                     </svg>
-                </button>
+                    </button>
 
                     <ul class="list mobail-list">
                         <li class="mobail-list__item">
@@ -74,46 +75,48 @@
                         <li class="mobail-list__item">
                             <a class="link mobail-list__link" href="#contacts">Контакты</a></li>
                     </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mobail-list__contacts">
+                        <li class="list mobail-list__part">
+                            <a class="link mobail-list__tel" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="list mobail-list__part">
+                            <a class="link mobail-list__email" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                </div>
 
-                        <div class="mobail-list__contacts">
-                            <li class="list mobail-list__part">
-                                <a class="link mobail-list__tel" href="tel:+380961111111">
-                                    +38 096 111 11 11
+                        <ul class="mobail-social-list">
+                            <li class="list mobail-social-list__item">
+                                <a href="" class="link mobail-social-list__link">
+                                    Instagram
+                                    <div class="line-social"></div>
                                 </a>
                             </li>
-                            <li class="list mobail-list__part">
-                                <a class="link mobail-list__mail" href="mailto:info@devstudio.com">
-                                    info@devstudio.com
+                            <li class="list mobail-social-list__item">
+                                <a href="" class="link mobail-social-list__link">
+                                    Twitter
+                                    <div class="line-social"></div>
                                 </a>
                             </li>
-                        </div>
-
-                <ul class="mobail-social-list">
-                    <li class="list mobail-social-list__item">
-                        <a href="" class="mobail-social-list__link">
-                            Instagram
-                            <div class="line-social"></div>
-                        </a>
-                    </li>
-                    <li class="list mobail-social-list__item">
-                        <a href="" class="mobail-social-list__link">
-                            Twitter
-                            <div class="line-social"></div>
-                        </a>
-                    </li>
-                    <li class="list mobail-social-list__item">
-                        <a href="" class="mobail-social-list__link">
-                            Facebook
-                            <div class="line-social"></div>
-                        </a>
-                    </li>
-                    <li class="list mobail-social-list__item">
-                        <a href="" class="mobail-social-list__link">
-                            "LinkedIn"
-                            <div class="line-social"></div>
-                        </a>
-                    </li>
-                </ul>
+                            <li class="list mobail-social-list__item">
+                                <a href="" class="link mobail-social-list__link">
+                                    Facebook
+                                    <div class="line-social"></div>
+                                </a>
+                            </li>
+                            <li class="list mobail-social-list__item">
+                                <a href="" class="link mobail-social-list__link">
+                                    LinkedIn
+                                    <div class="line-social"></div>
+                                </a>
+                            </li>
+                        </ul>
+                
             </div>
         </div>
     </header>
@@ -748,5 +751,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>                          
