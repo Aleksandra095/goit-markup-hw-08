@@ -566,6 +566,12 @@ body {
   border: none;
   right: 15px;
   top: 21px;
+  transition: fill var(--timing-function) var(--transition-duration-time);
+}
+
+.mob-close-btn:hover {
+  color: var(--first-btn-color);
+  fill: #2196F3;
 }
 
 .mobail-list {
