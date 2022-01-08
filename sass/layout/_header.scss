@@ -66,6 +66,10 @@
     transition: background-color var(--transition-duration-time) var(--timing-function);
     @media screen and (min-width: 768px)and (max-width: 1199px){
         padding-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
 }
 .header-list__mail{
@@ -75,6 +79,14 @@
     letter-spacing: 0.02em;
     color:var(--second-header-text-color);
     transition: background-color var(--transition-duration-time) var(--timing-function);
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color:var(--second-header-text-color);
+        transition: background-color var(--transition-duration-time) var(--timing-function);
+    }
 }
 
 .header-list__icon{
@@ -194,19 +206,22 @@
 }
 .header-container{
     height: 80px;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     align-items: center;
-    @media screen and (min-width: 1200px){
+    /*@media screen and (min-width: 1200px){
         width: 1200px;
-    }
+    }*/
     @media screen and (max-width: 767px){
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 768px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;}
 }
 .button-menu{
     width: 40px;
